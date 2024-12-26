@@ -29,15 +29,15 @@ app.use(cors());
 app.use(express.json()); // To parse JSON requests
 
 // Routes
-app.use('/signup', SignUpRouter);
-app.use('/login', loginUser);
+app.use('/api/v1/signup', SignUpRouter);
+app.use('/api/v1/login', loginUser);
 // const userRouter = require('./routes/user');
 // const artistrouter = require('./routes/artistroute');
-app.use('/user', userRouter);
-app.use('/artists',artistrouter);
-app.use('/albums',albumRouter)
-app.use('/tracks',trackRouter)
-app.use('/favorites',favRouter)
+app.use('/api/v1/user', userRouter);
+app.use('/api/v1/artists',artistrouter);
+app.use('/api/v1/albums',albumRouter)
+app.use('/api/v1/tracks',trackRouter)
+app.use('/api/v1/favorites',favRouter)
 // Start Server
 // (async () => {
 //     try {
