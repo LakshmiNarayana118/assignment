@@ -1,0 +1,25 @@
+# render.yaml
+services:
+  - name: my-node-app
+    type: web
+    env: node
+    branch: master
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        value: database-1.cfyqa2g0aqry.ap-south-1.rds.amazonaws.com
+      - key: DB_USER
+        value: admin
+      - key: DB_PASS
+        value: Lucky1188
+      - key: DB_NAME
+        value: music
+      - key: DB_PORT
+        value: "3306"
+      - key: DB_DIALECT
+        value: mysql
