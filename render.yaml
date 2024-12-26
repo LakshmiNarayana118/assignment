@@ -18,7 +18,7 @@ services:
       - key: DB_PASS
         value: Lucky1188
       - key: DB_NAME
-        value: music
+        value: musicapp
       - key: DB_PORT
         value: "3306"
       - key: DB_DIALECT
