@@ -1,5 +1,6 @@
 require('dotenv').config(); // Load environment variables
 const { Sequelize } = require('sequelize');
+//const { FORCE } = require('sequelize/lib/index-hints');
 
 // Create a new Sequelize instance
 const sequelize = new Sequelize(

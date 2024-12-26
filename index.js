@@ -38,6 +38,9 @@ app.use('/api/v1/artists',artistrouter);
 app.use('/api/v1/albums',albumRouter)
 app.use('/api/v1/tracks',trackRouter)
 app.use('/api/v1/favorites',favRouter)
+app.get('/api/v1', (req, res) => {
+    res.status(200).send('Welcome to the API ,if new user redirect to /signup or /login');
+})
 // Start Server
 // (async () => {
 //     try {
